@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;    
+}
+body {
+    height: 100vh;
+    background-color: #121212;
+}
+.container {
+    background-color: #121212;
+    width: 100%;
+    min-height: 100vh;
+    color: #CBF4F7;
+}
+.header {
+    background-color: #132645;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.header .divHomeImg {
+    margin-bottom: 12px;
+    transition: 0.3s all ease-in-out;
+}
+.header .divHomeImg:hover {
+    transform: scale(120%);
+}
+.header .divHomeImg .homeLinkImg {
+    width: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.header .headerMenu .menuOptions {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header .headerMenu .menuOptions .menuLink {
+    color: white;
+    transition: 0.4s all ease-in-out;
+    font-size: 18px;
+    margin-right: 50px;
+}
+.header .headerMenu .menuOptions .menuLink:hover {
+    color: #CBF4F7;
+    border-bottom: 1px solid #FFFb80;
+}
+.introductionSectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+.introductionSectionContainer .sectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 800px;
+}
+.introductionSectionContainer .sectionText h2 {
+    color: #CBF4F7;
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 700;
+    /* text-align: center; */
+}
+.introductionSectionContainer .sectionText span {
+    font-size: 2em;
+    color: #FFFb80;
+}
+/* Generic link button */
+.moreInfoButton {
+    color: #FFFb80;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 25px;
+    background: #132645;
+    width: 160px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+.moreInfoButton:hover {
+    transform: translateY(-10px);
+}
+.introductionSectionContainer img {
+    transform: scale(60%);
+    transition: 0.4s ease-in-out;
+}
+.sectionCategories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+    /* background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(19,38,69,1) 90%); */
+    background: linear-gradient(to top, rgba(18,18,18,1) 5%, rgba(19,38,69,1) 95%);
+    padding: 20px 0;
+}
+.sectionCategories .coverContainer img {
+    height: 600px;
+    border-radius: 4px;
+}
+.sectionCategories .coverContainer p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #CBF4F7;
+    font-weight: bold;
+    transition: 0.4s all ease-in-out;
+}
+.sectionCategories .coverContainer p:hover {
+    color: #FFFb80;
+}
+.sectionMangaka {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.sectionMangaka .sectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 800px;
+}
+.sectionMangaka img {
+    height: 350px;
+    border-radius: 4px;
+}
+.sectionMangaka .sectionText h2 {
+    color: #CBF4F7;
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 700;
+}
+.sectionMangaka .sectionText span {
+    font-size: 1.5em;
+    color: #FFFb80;
+}
+.sectionTopMangas {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(18,18,18,1) 5%, rgba(19,38,69,1) 95%);
+}
+.sectionTopMangas .topMangasTitle {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color:#CBF4F7;
+    margin-bottom: 30px;
+}
+.sectionTopMangas .topMangasContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+.sectionTopMangas .topMangasContainer .mangaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionTopMangas .topMangasContainer .mangaContainer a {
+    padding: 0;
+}
+.sectionTopMangas .topMangasContainer .mangaContainer img {
+    height: 600px;
+    border-radius: 4px;
+    transform: scale(90%);
+    transition: 0.4s all ease-in-out;
+}
+.sectionTopMangas .topMangasContainer .mangaContainer img:hover {
+    transform: scale(100%);
+}
+.sectionTopMangas .topMangasContainer .mangaContainer .mangaDescription {
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+.sectionTopMangas .topMangasContainer .mangaContainer .mangaDescription span {
+    color: #FFFb80;
+    font-size: 1.5em;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #132645;
+    margin-top: 40px;
+}
+.footer h2 {
+    font-size: 1.5em;
+}
+.footer span {
+    color: #FFFb80;
+}
+.footer .footerMenu .socialMedias {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer .footerMenu .socialMedias img {
+    height: 40px;
+}
+
+/* Responsividade */
+@media(max-width: 1400px) {
+    .introductionSectionContainer img {
+        margin-top: -250px;
+    }
+}
+@media(max-width: 1290px) {
+    .sectionMangaka .moreInfoButton {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 860px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .divHomeImg {
+        margin-left: -90px;
+    }
+    .headerMenu .menuOptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuLink {
+        font-size: 16px;
+    }
+}
+@media(max-width: 840px) {
+    .introductionSectionContainer .sectionText p {
+        word-break: break-word;
+        width: 600px;
+    }
+    /* Mangaka section */
+    .sectionMangaka .sectionText p {
+        word-break: break-word;
+        width: 600px;
+    }
+}
+@media (max-width: 550px) {
+    .sectionTopMangas .topMangasTitle {
+        font-size: 2em;
+    }
+}
+@media(max-width: 628px) {
+    /* Introduction section */
+    .introductionSectionContainer {
+        width: 80%;
+        align-items: center;
+    }
+    .introductionSectionContainer img {
+        margin-top: -310px;
+        transform: scale(45%);
+    }
+    .introductionSectionContainer .sectionText {
+        align-items: center;
+    }
+    .introductionSectionContainer .sectionText p {
+        width: 80%;
+        text-align: justify;
+    }
+    .introductionSectionContainer .sectionText h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .introductionSectionContainer .sectionText span {
+        font-size: 2.5em;
+    }
+    /* Mangaka section */
+    .sectionMangaka {
+        width: 80%;
+        align-items: center;
+    }
+    .sectionMangaka .sectionText {
+        align-items: center;
+    }
+    .sectionMangaka .sectionText p {
+        width: 80%;
+        text-align: justify;
+    }
+    .sectionMangaka .sectionText h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .sectionMangaka .sectionText span {
+        font-size: 2em;
+    }
+    /* Category container */
+    .sectionCategories {
+        margin-top: -200px;
+    }
+}
+@media(max-width: 450px) {
+    /* Mangaká section */
+    .sectionMangaka img {
+        height: 250px;
+        width: 300px;
+    }
+    /* Category section */
+    .sectionCategories .coverContainer img{
+        width: 350px;
+        height: 500px;
+    }
+    .sectionTopMangas .topMangasTitle {
+        font-size: 1.5em;
+    }
+    .sectionTopMangas .topMangasContainer .mangaContainer img {
+        height: 500px;
+        width: 350px;
+    }   
+}
+@media(max-width: 390px) {
+    .introductionSectionContainer .sectionText h2 {
+        font-size: 1.5em;
+    }
+    .introductionSectionContainer .introductionSectionContainer span {
+        font-size: 1.5em;
+    }
+    /* Mangaká section */
+    .sectionMangaka .sectionText h2 {
+        font-size: 1.5em;
+    }
+    .sectionMangaka .introductionSectionContainer span {
+        font-size: 1.5em;
+    }
+    .sectionCategories .coverContainer img{
+        width: 300px;
+        height: 450px;
+    }
+    .sectionTopMangas .topMangasContainer .mangaContainer img {
+        height: 450px;
+        width: 300px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
