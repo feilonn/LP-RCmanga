@@ -277,7 +277,6 @@ body {
         align-items: center;
     }
     .introductionSectionContainer img {
-        margin-top: -310px;
         transform: scale(45%);
     }
     .introductionSectionContainer .sectionText {
